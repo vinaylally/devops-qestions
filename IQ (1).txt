@@ -34,10 +34,18 @@ Docker Questions
 =================================================
 1 What is the difference between ADD and COPY in dockerfile
 ans: copy:it is used for copy files and directotys from local host to dockerfile
-add: it is also used for copy files direcories and used for handle urls and download extract files 
+add: it is also used for copy files direcories and used for download files from remote server to dockerfile it will automatically download extract files
+
 2 What is the difference between CMD and ENTRYPOINT in dockerfile
+ans: both are similar but instructions are different.when a container starts running .entrypoint is a process that exicuted inside the container 
+CMD is the default set of arguments that are supplied to the entrypoint process 
+
+
 3 List the dockerfile keywords that you have used
+ans: from,workdir,cmd,run,entrypoint,maintainer,expose,copy,add,env,user,volume
+
 5 Explain the microservices architecture that you have setup using docker compose
+ans:
 6 Can you write a sample docker compose file to setup a multi container architecture
 8 How do you create images in docker.
 9 Do you have experience in setting up a docker private registry
