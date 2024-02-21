@@ -90,9 +90,28 @@ ans:docker logs container-id
 
 11 What are the different types of volumes and explain where you have used them
 ans:
-1.simple docker volumes:
-2.sharable docker volumes
-3.docker volume containers
+1.simple docker volumes: it is used for data storing.but we can store one container data only.we cant re use it
+2.sharable docker volumes:same volume shared between multiple containers.what ever changes done by one container that will be reflectrd in another container
+3.docker volume containers:we can share the data between local host to container container to local host.it is bidirectional
+12. what is cache busting?
+ans:when ever we create an docker image with the dockerfile the data will be stored in docker cache.if  want to create new image with same docker file older data will not exicuted that will be takes from docker cache.new data will be exicuted.we want to exicute older data and new data without taking from cache we use --no-cache
+docker build --no-cache -t container-name .
+
+13.what is dangling volume?
+ans: when ever u delete an container but the volume is still persistent in local machine then we called as dangling volume
+
+14.version: "3.8"
+   services: 
+   	myjank:
+		image: jenkins/jenkins
+		ports:
+		- "5050:8080"
+	mydb:
+		image: mysql:latest
+		environment:
+		  	MYSQL_ROOT_PASSWORD: iq
+		volumes:
+		- /db:var/lib/mysql
 
 
 Kubernetes Questions
