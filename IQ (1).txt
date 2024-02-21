@@ -1,0 +1,104 @@
+Git Interview Questions
+==================================
+1 Expalin difference betwen Git clone,git fetch and git pull
+2 What is git merge and git rebase,expalin the scenarios where they are used
+3 Why do we require git cherry picking
+5 What is the purpoer of git ignore
+6 What is git stash
+7 How to maintianr release inof in git (git tags)
+
+Jenkins Questions
+======================================
+1 Expalin the setup process of Master/Salve and in whcih scenario did you implement it
+2 What is the difference between scripted pipleine and declarative pipeline and which on
+  di you use
+3 What are plugins that you have used in Jenkins
+4 What are shared libraries in Jenkins and have you implemented them
+5 Expalin the flow of CI-CD that you have done in your projects
+6 What is the purpose of Multi branch pipeline and did you implement them,if so how
+7 What are Webhooks
+
+Ansible Questions
+=========================================
+1 Explain handlers
+2 What are ansible roles and what is the folder structure of roles
+3 Explain the playbooks you have created and for what purpose
+4 What are the modules you have used in Ansible
+5 What is inventory file
+6 How can ansible playbook overcome an error and continue 
+7 What is the purpose of setup module
+8 How can we implement loops in Ansible and where did you use it
+9 How to execute playbooks based on a condition(when conditions)
+
+Docker Questions
+=================================================
+1 What is the difference between ADD and COPY in dockerfile
+2 What is the difference between CMD and ENTRYPOINT in dockerfile
+3 List the dockerfile keywords that you have used
+5 Explain the microservices architecture that you have setup using docker compose
+6 Can you write a sample docker compose file to setup a multi container architecture
+8 How do you create images in docker.
+9 Do you have experience in setting up a docker private registry
+10 How can we see the logs of a container
+11 What are the different types of volumes and explain where you have used them
+
+Kubernetes Questions
+===================================================
+1 Explain the components of Master/Slave or Explain the architecture of Kubernetes
+2 Have you worked on setup of Kubenrnetes if so explain
+3 Did you work on managed kubernetes services like GKE,EKS etc
+4 What are service objects that you have used
+5 Explain the micro services architecture that you have setup in your previous project in   Kubernetes
+6 What are the volume that you have used in Kubernetes
+7 What are the differences between Docker swarm and Kubernetes
+8 Why do we need container orchestration tools.
+9 Can you write a deployment defintion file
+10 What are statfulsets and where have you used them
+11 Have you used helm charts and what is the advantage
+12 What is the command to create a helm chart
+13 List out the important object that you used in Kubernetes
+14 What is the command to see the pod logs
+15 If a pod doesnt start what trouble shooting steps will you perform
+   (Explain about kubect logs,kubectl describe,kubectl exec commands)
+
+================================================================================ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
