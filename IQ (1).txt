@@ -33,6 +33,8 @@ Ansible Questions
 Docker Questions
 =================================================
 1 What is the difference between ADD and COPY in dockerfile
+ans: copy:it is used for copy files and directotys from local host to dockerfile
+add: it is also used for copy files direcories and used for handle urls and download extract files 
 2 What is the difference between CMD and ENTRYPOINT in dockerfile
 3 List the dockerfile keywords that you have used
 5 Explain the microservices architecture that you have setup using docker compose
