@@ -45,12 +45,55 @@ CMD is the default set of arguments that are supplied to the entrypoint process
 ans: from,workdir,cmd,run,entrypoint,maintainer,expose,copy,add,env,user,volume
 
 5 Explain the microservices architecture that you have setup using docker compose
-ans:
+ans:we are having mainly 3 micro services 1.user service 2.order service 3.product service each service is created as docker image the microservices deployed using docker compose
+
+
 6 Can you write a sample docker compose file to setup a multi container architecture
+ans:
+---
+version: "3.7"
+
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./www:/var/www/html
+
+  db:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+    volumes:
+      - ./db:/var/lib/mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - db
+    ports:
+      - "8080:80"
+...
+
 8 How do you create images in docker.
+ans: we can create docker image with the help of docker commit command and also with the Dockerfile
+----docker commit container-id image-name
+----docker build -t image-name .
+
 9 Do you have experience in setting up a docker private registry
+create an dockerhub account.create one repo.for login into  you are accont we use a command docker login.we can push the docker image from local host to dockerhub.and we can pull the image from dockerhub.
+
 10 How can we see the logs of a container
+
+ans:docker logs container-id
+
 11 What are the different types of volumes and explain where you have used them
+ans:
+1.simple docker volumes:
+2.sharable docker volumes
+3.docker volume containers
+
 
 Kubernetes Questions
 ===================================================
