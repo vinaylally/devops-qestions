@@ -113,10 +113,24 @@ ans: when ever u delete an container but the volume is still persistent in local
 		volumes:
 		- /db:var/lib/mysql
 
+		docker-compose up -d
+		docker-compose down
+
 
 Kubernetes Questions
 ===================================================
 1 Explain the components of Master/Slave or Explain the architecture of Kubernetes
+ans:k8s is master slave architectre.
+master componenets:
+api-server: it is a gateway.it checks whether user has a privilages to run a command
+etcd: it is a repository of a k8s cluster.it will store all the data of a cluster in keyvalue pairs 
+scheduler: it checks hardware resources of all salves.and decide which pod will rn on which slave.it assigns run on a specific slave 
+controller manager:it is responsible for  maintain the desired capacity of pods
+slave components:
+kubelet: scheduler only assigns the work.creation of pod on slaves are done by kubelet 
+kube proxy:it maintain all ip adresses.this is responible for service integration.it chekcs all the pods which are same microservice will run on same slave r near by slaves
+
+
 2 Have you worked on setup of Kubenrnetes if so explain
 3 Did you work on managed kubernetes services like GKE,EKS etc
 4 What are service objects that you have used
