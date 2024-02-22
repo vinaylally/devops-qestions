@@ -149,9 +149,35 @@ kube proxy:it maintain all ip adresses.this is responible for service integratio
 
 ================================================================================ 
 
+Aws questions
+=====================================================================================
+1.what is network interface(nic)
+ans: network interface in ec2 instance is virtual networkcard that provides netconnectivity to instance
 
+2.what is s3 bucket lifecycle
+ans: it is nothing but set of rules that define actions to be taken on the object in an s3 bucket overtime.the rules set that how objects move between tiers,expire,deleted.
+moved from standard infreqent access after a minimum of 30 days
+move after 60 days to one zone infreqent access
+move after 180 days to glacier deep archive.
 
+Terraform questions:
+================================================================================
+1.what is terraform statefile?
+ans:terraform statefile is json format file.that stores the configuration of a infrastructure.it is automatically created when we run terraform plan command.and it is named as terraform.tfstate
 
+2 what is terraform.tfstate.backup file
+ans:terraform statefile backup is a copy of the previous state of the infra.terraform automatically creates a backup of the statefile before making any changes to it.
+
+3.what is terraform tfvars
+ans.it is a variable file to specify varicables in it.and used it again.
+
+4.what is terraform.lock.hcl file
+ans: it is a lockfile .that tracks the versions of all terraform providers.which is automatically created when u run the terraform init command.
+
+5.what is terraform.tfstate.lock.info
+ans:it contains state locking metadata.if u run any cmd in state file until it finished.another try to run a cmd on same statefile  it won't allows.
+
+6.what is terraform modules
 
 
 

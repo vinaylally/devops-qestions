@@ -1,0 +1,17 @@
+s3 bucket life cycle policy
+s3 bucket properties
+network interface
+s3 static webhosting (promotions)
+
+
+
+what is modules 
+how to use modules
+what is terraform statefile
+how to connect aws accounts
+how to run terraform
+--terraform will run from jenkins.we are having seperate pipeline.that pipeline will be used 
+what is terraform backend
+where will store the statefile
+
+ 
